@@ -5,8 +5,17 @@ html, body {
 }
 
 body {
+  font-family: $font--stack;
   color: $color--text;
   // Fixes odd whitespace issue
   position: relative;
   bottom: 19.912500381469727px;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
 }

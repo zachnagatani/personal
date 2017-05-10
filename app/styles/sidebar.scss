@@ -4,6 +4,33 @@
     position: fixed;
     width: 25%;
     height: 100%;
-    background: #f7f7f7;
+    padding-right: 30px;
     float: left;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.sidebar__title {
+    font-size: 30px;
+}
+
+.sidebar__nav {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.sidebar__anchor {
+    margin-bottom: 50px;
+    font-size: 26px;
+
+    a {
+        color: $color--text;
+        text-decoration: none;
+    }
+}
+
+.sidebar__anchor--active {
+    text-decoration: underline;
 }
