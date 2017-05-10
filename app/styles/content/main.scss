@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 main {
-    width: 66.6666%;
+    width: calc(66.6666% + 59px);
     height: 100%;
     float: right;
 }
