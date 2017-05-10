@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: $color--text;
+  // Fixes odd whitespace issue
+  position: relative;
+  bottom: 19.912500381469727px;
+}
