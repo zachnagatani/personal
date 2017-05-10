@@ -1,6 +1,6 @@
 @import 'variables.scss';
 
 // Import rules
-@import 'global.scss';
-@import 'sidebar.scss';
-
+@import 'content/global.scss';
+@import 'content/sidebar.scss';
+@import 'content/main.scss';
