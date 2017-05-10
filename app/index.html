@@ -27,7 +27,67 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <nav class="sidebar">
+      <div class="container container--sidebar">
+        <div class="sidebar__brand">
+          <h1 class="sidebar__name">Zach Nagatani</h1>
 
+          <p class="sidebar__title">Full Stack Web Developer</p>
+        </div><!-- sidebar__brand -->
+      </div> <!-- container sidebar -->
+
+      <ul class="sidebar__nav">
+        <li class="sidebar__anchor"><a href="#portfolio">Portfolio</a></li>
+        <li class="sidebar__anchor"><a href="#about">About</a></li>
+        <li class="sidebar__anchor"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="section section--portfolio" id="portfolio">
+        <figure class="section--portfolio__item"></figure>
+        <figure class="section--portfolio__item"></figure>
+        <figure class="section--portfolio__item"></figure>
+        <figure class="section--portfolio__item"></figure>
+        <figure class="section--portfolio__item"></figure>
+        <figure class="section--portfolio__item"></figure>
+      </section>
+
+      <section class="section section--about" id="about">
+        <h2 class="section__heading">About Me</h2>
+
+        <p class="section__copy">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum numquam eos quia culpa adipisci fuga! Repellat hic, quaerat veniam! Doloribus exercitationem ratione sunt quos iusto soluta corrupti nulla neque!
+        </p>
+      </section>
+
+      <section class="section section--contact" id="contact">
+        <h2 class="section__heading">Contact Me</h2>
+
+        <form action="POST" class="form">
+          <label>
+            Your Name
+            <input class="form__input" type="text" name="name" id="name">
+          </label>
+
+          <label>
+            Your Email
+            <input class="form__input" type="email" name="email" id="email">
+          </label>
+
+          <label>
+            Message
+            <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
+          </label>
+
+          <input class="form__btn" type="submit" value="Send">
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2017 Zach Nagatani</p>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
