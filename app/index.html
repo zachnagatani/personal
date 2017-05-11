@@ -61,6 +61,7 @@
       <section class="section section--about" id="about">
         <h2 class="section__heading">About Me</h2>
         <hr class="hr--about">
+
         <p class="section__copy">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio earum numquam eos quia culpa adipisci fuga! Repellat hic, quaerat veniam! Doloribus exercitationem ratione sunt quos iusto soluta corrupti nulla neque!
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum illo, natus minima, molestiae est voluptatibus! Doloribus, error quasi quis debitis neque alias nisi quod maxime quas dolorum, vero voluptatibus labore.
@@ -69,22 +70,17 @@
 
       <section class="section section--contact" id="contact">
         <h2 class="section__heading">Contact Me</h2>
+        <hr class="hr--contact">
 
         <form action="POST" class="form">
-          <label>
-            Your Name
-            <input class="form__input" type="text" name="name" id="name">
-          </label>
+          <label class="form__label" for="name">Your Name</label>
+          <input class="form__input" type="text" name="name" id="name">
 
-          <label>
-            Your Email
-            <input class="form__input" type="email" name="email" id="email">
-          </label>
+          <label class="form__label" for="email">Your Email</label>
+          <input class="form__input" type="email" name="email" id="email">
 
-          <label>
-            Message
-            <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
-          </label>
+          <label class="form__label" for="message">Message</label>
+          <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
 
           <input class="form__btn" type="submit" value="Send">
         </form>

@@ -1,0 +1,55 @@
+@import 'variables.scss';
+
+.section--contact {
+    @include section-setup();
+    background: $color--bg;
+}
+
+.hr--contact {
+    width: 131px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input, .form__textarea, .form__btn {
+    border: none;
+    margin-bottom: 20px;
+    @include box-shadow();
+}
+
+.form__input:focus, .form__textarea:focus, .form__btn:focus {
+    outline: 2px solid $color--text;
+}
+
+.form__label {
+    margin-bottom: 10px;
+}
+
+.form__input {
+    height: 40px;
+}
+
+.form__textarea {
+    padding: 10px;
+}
+
+.form__btn {
+    height: 60px;
+    background: $color--accent;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    box-shadow: none;
+}
+
+@media (min-width: 768px) {
+    .form {
+        width: 50%;
+    }
+}
