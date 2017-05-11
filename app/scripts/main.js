@@ -20,12 +20,11 @@ $(function() {
                   } else {
                       $('.' + SELECTEDCLASS).removeClass(SELECTEDCLASS).height(200);
                       $target.addClass(SELECTEDCLASS).height(window.innerHeight - MARGINOFFSET);
-                      $target.scrollView();
                   }
               };
 
         // Set the height of the portfolio on load
-        element.height(window.innerHeight);
+        element.css('min-height', window.innerHeight);
 
         element.on('click', clickHandler);
     })();
