@@ -13,10 +13,10 @@ $font--copy-size: 18px;
 }
 
 @mixin section-setup() {
-    padding: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 @mixin content-width() {

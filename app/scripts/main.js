@@ -1,6 +1,9 @@
 $(function() {
     'use strict';
 
+    $('.section').each(function() {
+        $(this).css('min-height', window.innerHeight);
+    });
     (function() {
         // This closure's element is the portfolio section
         const element = $('#portfolio'),
@@ -27,5 +30,10 @@ $(function() {
         element.css('min-height', window.innerHeight);
 
         element.on('click', clickHandler);
+    })();
+
+    (function() {
+        const element = $('.container--sidebar');
+        element.scrollspy({ activeClass: 'sidebar__anchor--active', animate: true, offset: 1 });
     })();
 });
