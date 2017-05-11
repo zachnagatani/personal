@@ -16,5 +16,10 @@
     margin-right: 10px;
     width: calc(33.3333% - 20px);
     height: 200px;
-    // @include box-shadow();
+    @include box-shadow();
+    transition: width .5s, height .5s;
+}
+
+.section--portfolio__item--selected {
+    width: 100%;
 }
