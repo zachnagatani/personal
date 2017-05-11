@@ -1,0 +1,13 @@
+@import 'variables.scss';
+
+.footer {
+    @include content-width();
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

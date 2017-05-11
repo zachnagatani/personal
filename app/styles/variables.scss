@@ -18,3 +18,13 @@ $font--copy-size: 18px;
     flex-direction: column;
     align-items: center;
 }
+
+@mixin content-width() {
+    width: calc(66.6666% + 63px);
+}
+
+@mixin clearfix() {
+  content: " ";
+  display: block;
+  clear: both;
+}

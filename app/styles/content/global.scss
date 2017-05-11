@@ -1,13 +1,19 @@
 @import 'variables.scss';
 
-html, body {
-  height: 100%;
+html {
+  min-height: 100%;
 }
 
 body {
+  height: 100%;
   font-family: $font--stack;
   color: $color--text;
   font-size: $font--copy-size;
+  position: relative;
+}
+
+body:after {
+  @include clearfix();
 }
 
 h1, h2, p {
