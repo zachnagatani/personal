@@ -4,6 +4,7 @@ $(function() {
     $('.section').each(function() {
         $(this).css('min-height', window.innerHeight);
     });
+
     (function() {
         // This closure's element is the portfolio section
         const element = $('#portfolio'),
@@ -20,9 +21,17 @@ $(function() {
                   // If not, shrink any other expanded item and then expand it.
                   if (target.className.includes(SELECTEDCLASS)) {
                       $target.removeClass(SELECTEDCLASS).height(200);
+                      // Scrolls back to portfolio section
+                      setTimeout(function() {
+                        $('html, body').animate({scrollTop: $('#portfolio').offset().top}, 500);
+                      }, 500);
                   } else {
                       $('.' + SELECTEDCLASS).removeClass(SELECTEDCLASS).height(200);
                       $target.addClass(SELECTEDCLASS).height(window.innerHeight - MARGINOFFSET);
+                      // Centers portfolio item on screen
+                      setTimeout(function() {
+                        $('html, body').animate({scrollTop: $target.offset().top - 10}, 500);
+                      }, 200);
                   }
               };
 
